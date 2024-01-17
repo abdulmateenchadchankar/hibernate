@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hibernate-mapping>
+	<class name="com.zettamine.hibernate.entity.Employee" table="emp">
+		<id name="eId" column="empno">
+			<generator class="assigned"/>
+			<!--generator class="increment"/>-->
+		</id>
+		<property name="eName" column="ename" />
+		<property name="eSal" column="sal" />
+	</class>  
+</hibernate-mapping>
